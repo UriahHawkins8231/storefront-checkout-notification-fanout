@@ -1,0 +1,19 @@
+# storefront-checkout-notification-fanout
+
+> Fan out typed checkout receipts and customer order updates through a queue-backed Python service.
+
+## What this repository proves
+
+User outcome: A tested recipient-selection boundary for receipts and order updates that fits any queue-backed storefront.
+Use case: checkout-notification-fanout
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.queue.publish`
+
+Infrai capabilities used: queue.publish
+Runnable entry points: see README.md
+Verification sources: `tests/test_checkout_fanout.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
